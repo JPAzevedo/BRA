@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlVotesMaster"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/onitemclicked"
+    android:clickable="true"
+    android:focusable="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlVotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/listview_margin"
+        android:layout_marginLeft="@dimen/listview_margin">
+
+    <ImageView
+        android:layout_width="@dimen/cirle_size"
+        android:layout_height="@dimen/cirle_size"
+        android:src="@drawable/circle"/>
+
+        <TextView
+            android:id="@+id/tvVotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/fontsize_maintext" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rlVotes"
+        android:layout_marginLeft="@dimen/listview_margin"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/fontsize_phototitle" />
+
+</RelativeLayout>

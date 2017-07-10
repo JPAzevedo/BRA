@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlQuestionList"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/listview_margin">
+
+    <ImageView
+        android:id="@+id/ivList"
+        android:layout_width="@dimen/listview_image_size"
+        android:layout_height="@dimen/listview_image_size" />
+
+    <TextView
+        android:id="@+id/tvQuestionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/listview_margin"
+        android:layout_toRightOf="@+id/ivList"
+        android:textSize="@dimen/fontsize_listtext"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPostedAt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/tvQuestionTitle"
+        android:layout_marginLeft="@dimen/listview_margin"
+        android:layout_toRightOf="@id/ivList"
+        android:textSize="@dimen/fontsize_listtext" />
+
+</RelativeLayout>

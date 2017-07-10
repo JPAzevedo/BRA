@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="loadingactivity_defaultmargin">40dp</dimen>
+
+    <!-- Font size -->
+    <dimen name="fontsize_maintitle">48sp</dimen>
+    <dimen name="fontsize_phototitle">36sp</dimen>
+    <dimen name="fontsize_maintext">36sp</dimen>
+
+    <dimen name="cirle_size">100dp</dimen>
+</resources>

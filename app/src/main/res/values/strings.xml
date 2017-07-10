@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">App Test</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="loadingactivity_preparing">Getting data...</string>
+    <string name="httprequest_unexpectedresponse">unexpected error</string>
+    <string name="search_title">Search</string>
+    <string name="share_title">Share</string>
+    <string name="search_norecords">No records were found.</string>
+
+    <string name="retry_noserverhealth">Can\'t connect server. Please try again.</string>
+    <string name="nointernet_checkinfo">Please check you internet connection.</string>
+
+    <string name="share_email">Insert an email</string>
+    <string name="share_invalidemail">This is not a valid email</string>
+    <string name="share_success">Data was shared successfully.</string>
+    <string name="share_okbutton">OK</string>
+    <string name="share_cancelbutton">CANCEL</string>
+
+    <string name="detail_error">Something went wrong. Please try again.</string>
+    <string name="detail_votesucess">Your vote was successfully received.</string>
+    <string name="detail_votetitle">Vote</string>
+    <string name="detail_votemessage">Do you want to vote in </string>
+    <string name="vote_yes">YES</string>
+    <string name="vote_no">NO</string>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="loadingactivity_defaultmargin">40dp</dimen>
+
+    <!-- Font size -->
+    <dimen name="fontsize_maintitle">30sp</dimen>
+    <dimen name="fontsize_phototitle">20sp</dimen>
+    <dimen name="fontsize_maintext">18sp</dimen>
+    <dimen name="fontsize_listtext">17sp</dimen>
+
+    <!-- list view -->
+    <dimen name="listview_image_size">120dp</dimen>
+    <dimen name="listview_margin">4dp</dimen>
+    <dimen name="listview_marginTop">1dp</dimen>
+
+    <!-- -->
+    <dimen name="cirle_size">60dp</dimen>
+</resources>
