@@ -46,6 +46,7 @@ public class ActivityMain extends AppCompatActivity implements ActivityMainInter
     private static boolean isConnected = false;
     private AtomicInteger offset = new AtomicInteger(0);
     private ActivityMainController mainController;
+    private boolean running = false;
 
     private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
@@ -84,11 +85,13 @@ public class ActivityMain extends AppCompatActivity implements ActivityMainInter
         IntentFilter filter = new IntentFilter();
         filter.addAction(C.BROADCAST_ACTION);
         this.registerReceiver(this.broadcastReceiver, filter);
+        running = true;
     }
 
     public void onPause() {
         super.onPause();
         this.unregisterReceiver(this.broadcastReceiver);
+        running = false;
     }
 
     // Search Menu
@@ -136,9 +139,11 @@ public class ActivityMain extends AppCompatActivity implements ActivityMainInter
     }
 
     private void switchFragment(Fragment frag) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.flFragment, frag);
-        transaction.commit();
+        if(running) {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.flFragment, frag);
+            transaction.commit();
+        }
     }
 
     // Server request and its management
@@ -179,7 +184,6 @@ public class ActivityMain extends AppCompatActivity implements ActivityMainInter
                 if (questions == null || questions.size() % 10 != 0) {
                     isLast = true;
                 }
-
                 fragmentQuestionList.onDataReceived(questions, isLast);
                 switchFragment(fragmentQuestionList);
                 setMenuVisible(true);
