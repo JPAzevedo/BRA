@@ -28,16 +28,18 @@ The user can find a list of questions about programming languages. The users are
 
 1. Import the project:
     1. Open the IDE (Android Studio) and choose "Import Project."
-    1. Select the build.gradle file in the app directory.
+    1. Select the build.gradle file from the app folder.
 		
 1. Ensure you have downloaded the correct SDK (this app uses the API 25). If you don't have it, please download it.
    
-1. Check all dependencies such as Android Support Repository, Android Support Library, Google Play Services and Google Repository.
+1. Check dependencies such as Android Support Repository, Android Support Library, Google Play Services and Google Repository.
 
 1. Clean and rebuild the project
 
 1. Deploy the Android App
     1. Deploy your app via normal Android deployment procedures.
+
+NOTE: This is a test. So there isn't any app key to official deploy the app on Google Play Store.
 		
 ## Build Information 
 
@@ -45,8 +47,6 @@ The user can find a list of questions about programming languages. The users are
 - Gradle: 3.3
 - minSdkVersion: 21
 - targetSdkVersion: 25
-
-**NOTE: This is a test. So there isn't any app key to official deploy the app on Google Play Store**
 
 [1]: https://github.com/google/gson
 [2]: http://square.github.io/okhttp/
