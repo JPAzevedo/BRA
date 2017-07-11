@@ -86,8 +86,13 @@ public class FragmentQuestionList extends Fragment {
         }
 
         updateView();
-        if(slideUp && mRecyclerView!=null){
-            mRecyclerView.scrollToPosition(0);
+        if(slideUp && mRecyclerView!=null && getActivity()!=null){
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    mRecyclerView.smoothScrollToPosition(0);
+                }
+            });
         }
     }
 

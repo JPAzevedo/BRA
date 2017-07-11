@@ -206,7 +206,7 @@ public class ActivityMain extends AppCompatActivity implements ActivityMainInter
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if (!newText.isEmpty()) {
+                if (!newText.isEmpty() && !newText.equals(filter)) {
                     if (fragmentLoading != null) {
                         switchFragment(fragmentLoading);
                     }
